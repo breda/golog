@@ -24,7 +24,7 @@ type httpGetResponse struct {
 }
 
 type httpGetAllReponse struct {
-	Items []Record
+	Items []Record `json:"items"`
 }
 
 func NewHTTPServer(addr string) (*http.Server) {
